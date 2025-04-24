@@ -136,6 +136,7 @@ allIn.addEventListener('click', () => {
 })
 
 let balance = 1000
+
 money.textContent = balance
 let currentBet = 0
 
@@ -273,6 +274,4 @@ reset.addEventListener('click', () => {
     halfer.disabled = false
     currentBet = 0
 })
-
-
 
