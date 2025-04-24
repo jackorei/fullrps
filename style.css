@@ -3,6 +3,7 @@
     list-style: none;
     text-decoration: none;
     font-family: "Outfit", sans-serif;
+    text-decoration: none;
 }
 
 body {
@@ -59,6 +60,7 @@ body {
 }
 
 .rpsbutton {
+    color: black;
     background-color: white;
     font-size: 25px;
     border: 2px solid black;
@@ -91,6 +93,7 @@ body {
 }
 
 #reset {
+    color: black;
     background-color: rgb(255, 239, 169);
     font-size: 20px;
     border: 2px solid black;
@@ -119,20 +122,21 @@ body {
 
 
 #day {
-    font-size: 20px;
+    font-size: 17px;
     border: 0px solid black;
-    border-radius: 10px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 100%;
     background-color: rgb(140, 140, 174);
+    padding: 7px 10px;
 }
 #night {
     color: black;
-    font-size: 20px;
+    font-size: 17px;
     border: 0px solid black;
-    border-radius: 10px;
+    border-radius: 100%;
     background-color: rgb(140, 140, 174);
     cursor: pointer;
+    padding: 7px 10px;
 }
 
 #day:hover {
@@ -196,6 +200,7 @@ button {
 }
 
 .adjustbet {
+    color: black;
     background-color: rgb(209, 209, 240);
     border-radius: 5px;
     border: 1.5px solid black;
@@ -220,13 +225,19 @@ button {
 }
 
 .rules {
-    font-size: 20px;
+    font-size: 25px;
     border: 0px solid black;
     border-radius: 10px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 100%;
     background-color: rgb(140, 140, 174);
-    padding: 5px;
+    padding: 1px 11px;
+    transition: 0.3s;
+}
+
+.rules:hover {
+    transform: scale(1.05);
+    background-color: rgb(116, 116, 145);
 }
 
 .balance {
@@ -264,6 +275,7 @@ button {
 
 .rules {
     color: rgb(219, 219, 249)
+
 }
 
 .adjustbet:hover {
@@ -275,9 +287,54 @@ button {
     border-right: 3px rgb(181, 181, 206) dashed;
   }
 
+#placebet {
+    color: black
+}
+
+#rulecontain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ruletitle {
+    color: black;
+    margin-top: 8px;
+    font-size: 30px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+.allrules {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+#rulecont {
+    font-size: 22px;
+    padding: 3px;
+    color: black;
+}
+
+#ruleconte {
+    font-size: 22px;
+    padding: 3px;
+    color: black;
+}
+
+.howtotop {
+    margin-top: 20px;
+}
+
+
 @media (max-width: 600px) {
     .rtitle {
-        font-size: 24px;
+        font-size: 20px;
         color: black;
     }
     #backgroundp {
@@ -292,19 +349,60 @@ button {
         color: black;
     }
     #day {
-        font-size: 13px;
+        font-size: 12px;
         border: 0px solid black;
-        border-radius: 10px;
         cursor: pointer;
-        border-radius: 10px;
+        border-radius: 100%;
         background-color: rgb(140, 140, 174);
+        padding: 7px 10px;
     }
     #night {
         color: black;
-        font-size: 13px;
+        font-size: 12px;
         border: 0px solid black;
-        border-radius: 10px;
+        border-radius: 100%;
         background-color: rgb(140, 140, 174);
         cursor: pointer;
+        padding: 7px 10px;
+
+    }
+    #rulecontain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .ruletitle {
+        color: black;
+        margin-top: 8px;
+        font-size: 20px;
+        padding: 10px;
+        border-bottom: 2px solid black;
+    }
+    
+    .allrules {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+    }
+    
+    #rulecont {
+        font-size: 14px;
+        padding: 1px;
+        color: black;
+    }
+    
+    #ruleconte {
+        font-size: 14px;
+        padding: 1px;
+        color: black;
+    }
+    
+    .howtotop {
+        margin-top: 20px;
     }
 }
