@@ -235,6 +235,7 @@ button {
 #ninamessage1 {
     transform: rotate(8deg);
     color: rgb(123, 121, 144);
+    display: none;
 }
 
 

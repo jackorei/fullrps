@@ -41,6 +41,7 @@ const double = document.querySelector("#double")
 const halfer = document.querySelector("#halfer")
 const betmsg = document.querySelector("#betmsg")
 const nina = document.querySelector("#nina")
+const ninamessage = document.querySelector("#ninamessage1")
 
 
 const reset = document.querySelector("#reset")
@@ -251,6 +252,7 @@ buttonss.forEach(button => {
             finalscore.style.display = "inline-block"
             reset.style.display = "inline-block"
             nina.style.display = 'inline-block'
+            ninamessage.style.display = 'inline-block'
         }   
     })
 });
@@ -277,5 +279,6 @@ reset.addEventListener('click', () => {
     halfer.disabled = false
     currentBet = 0
     nina.style.display = 'none'
+    ninamessage.style.display = 'none'
 })
 
