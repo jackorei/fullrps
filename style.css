@@ -277,7 +277,7 @@ button {
 }
 
 #finalscore {
-    border-top: 2px solid black;
+    border-top: 2px solid rgb(67, 64, 77);
     display: none;
     padding-top: 20px;
 }
