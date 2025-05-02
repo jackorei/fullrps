@@ -229,6 +229,12 @@ button {
     border-radius: 100%;
     margin-top: 15px;
     display: none;
+    margin-bottom: 8px;
+}
+
+#ninamessage1 {
+    transform: rotate(8deg);
+    color: rgb(123, 121, 144);
 }
 
 
