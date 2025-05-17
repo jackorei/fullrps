@@ -144,7 +144,6 @@ money.textContent = balance
 let currentBet = 0
 
 placeBet.addEventListener('click', () => {
-    instruct.textContent = "First Round"
     const betAmount = parseInt(betbox.value)
     if (isNaN(betAmount)) {
         betmsg.style.display = "inline-block"
@@ -159,6 +158,7 @@ placeBet.addEventListener('click', () => {
         betmsg.textContent = "Bet exceeds balance!"
     }
     else {
+        instruct.textContent = "First Round"
         currentBet = betAmount
         balance = (balance - betAmount)
         money.textContent = balance
