@@ -98,7 +98,7 @@ body {
 
 #reset {
     color: black;
-    background-color: rgb(162, 164, 239);
+    background-color: rgb(153, 155, 226);
     font-size: 20px;
     border: 2px solid black;
     cursor: pointer;
@@ -117,7 +117,7 @@ body {
 
 
 #reset:hover {
-    background-color: rgb(205, 207, 243);
+    background-color: rgb(178, 182, 243);
 }
 
 

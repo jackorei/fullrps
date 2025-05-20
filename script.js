@@ -140,6 +140,14 @@ allIn.addEventListener('click', () => {
 
 let balance = 1000
 
+const cheat = {
+    addmoney(amount) {
+        balance += amount
+        money.textContent = balance
+        console.log(`Added $${amount} to your balance! `)
+    }
+}
+
 money.textContent = balance
 let currentBet = 0
 
@@ -252,7 +260,6 @@ buttonss.forEach(button => {
             finalscore.style.display = "inline-block"
             reset.style.display = "inline-block"
             nina.style.display = 'inline-block'
-            ninamessage.style.display = 'inline-block'
         }   
     })
 });
@@ -279,6 +286,5 @@ reset.addEventListener('click', () => {
     halfer.disabled = false
     currentBet = 0
     nina.style.display = 'none'
-    ninamessage.style.display = 'none'
 })
 
