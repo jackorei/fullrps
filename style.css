@@ -1,8 +1,4 @@
 
-
-
-
-
 *{
     list-style: none;
     text-decoration: none;
@@ -11,16 +7,30 @@
 }
 
 body {
-    background-color: #e7e7f5;
-    margin: 0px;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 #backgroundp {
-    height: 100vh;
     background-color: rgb(218, 218, 239);
     margin-left: 160px;
     margin-right: 160px;
+    border-left: 3px rgb(181, 181, 206) dashed;
+    border-right: 3px rgb(181, 181, 206) dashed;
+}
+
+#app {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
 #title {
@@ -319,11 +329,6 @@ button {
     background-color: rgb(198, 198, 225);
 }
 
-#backgroundp {
-    border-left: 3px rgb(181, 181, 206) dashed;
-    border-right: 3px rgb(181, 181, 206) dashed;
-  }
-
 #placebet {
     color: black
 }
@@ -444,3 +449,35 @@ button {
     }
 }
 
+.footer {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid rgb(70, 70, 86);
+  }
+  
+  .credit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgb(119, 119, 142);
+    font-size: 16px;
+  }
+  
+  .github-link {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .github-icon {
+    width: 20px;
+    height: 20px;
+    fill: rgb(119, 119, 142);
+    transition: fill 0.3s ease;
+  }
+  
+  .github-link:hover .github-icon {
+    fill: #cfcfcf;
+  }
